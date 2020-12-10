@@ -1,4 +1,47 @@
 /* Add CSS styles here! */
+
 body {
-  font-family: sans-serif;
+    font-family: 'Raleway', sans-serif;
+    color: var(--dark);
+    margin: 0;
+}
+
+* {
+    color: var(--dark);
+}
+
+:root {
+    --margin: 80px;
+    --dark: #1D1823;
+    --primary: #6125E1;
+    --primary-shade: #5821cc;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+a {
+    font-size: 18px;
+    color: var(--dark);
+    text-decoration: underline;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+p {
+    font-size: 24px;
+    font-weight: 300;
+}
+
+p > a {
+    font-size: 24px;
+}
+
+@media screen and (min-width: 900px) {
+    :root {
+        --margin: calc((100vw / 10) * 4);
+    }
 }
